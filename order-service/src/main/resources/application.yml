@@ -7,6 +7,12 @@ spring:
     url: jdbc:mysql://127.0.0.1:3306/order_service
     username: root
     password: pass
+  flyway:
+    enabled: true
+    url: jdbc:mysql://127.0.0.1:3306/order_service
+    user: root
+    password: pass
+    locations: classpath:db/migration
 
   jpa:
     properties:
