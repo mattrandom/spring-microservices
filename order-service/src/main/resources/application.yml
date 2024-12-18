@@ -1,0 +1,23 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/order_service
+    username: root
+    password: pass
+  flyway:
+    enabled: true
+    url: jdbc:mysql://127.0.0.1:3306/order_service
+    user: root
+    password: pass
+    locations: classpath:db/migration
+
+  jpa:
+    properties:
+      hibernate:
+        format_sql: true
+    show-sql: true
+    hibernate:
+      ddl-auto: none #We want to use Flyway migration
