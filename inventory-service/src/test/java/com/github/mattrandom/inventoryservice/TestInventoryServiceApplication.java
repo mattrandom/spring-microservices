@@ -1,6 +1,5 @@
 package com.github.mattrandom.inventoryservice;
 
-import com.github.mattrandom.inventory_service.InventoryServiceApplication;
 import org.springframework.boot.SpringApplication;
 
 public class TestInventoryServiceApplication {
